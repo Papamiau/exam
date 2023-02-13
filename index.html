@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atsiskaitymas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="toolbar">
+    <a href="">Add Recipe</a>
+    <a href="./recipes.html"> All Recipes </a>
+</div>
+
+<div class="main">
+    <div class="recipe" >
+        <div class="recipeInputs" >
+            <input type="text" placeholder="Title" class="title" />
+            <div>
+                <input type="text" placeholder="Ingridient at least 3" class="ingridient" />
+                <button class="addIngridient">Add</button>
+            </div>
+            <input type="text" placeholder="Description" class="description" />
+            <input type="number" placeholder="Calories" class="calories" />
+            <button class="getPhoto">GET PHOTO</button>
+            <button class="pRecipe">Recipe Preview</button>
+        </div>
+    </div>
+    <div class="recipePreview" >
+        <div class="container" >
+                <img id="image" src="" alt="">
+            <div class="preview" >
+                <div class="pTitle" ></div>
+                <div class="pDescription" ></div>
+                <div class="pCalories" ></div>
+            </div>
+        </div>
+        <ul class="pIngridients"></ul>
+        <button class="addRecipe">ADD RECIPE TO LIST</button>
+    </div>
+</div>
+</body>
+</html>
